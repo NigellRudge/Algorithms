@@ -19,6 +19,7 @@ export function factorial(N:number):number {
         return N * factorial(N-1);
     }
 }
+
 export function isPalindrome(inputValue: string):boolean{
     return inputValue === inputValue.split('').reverse().join('')
 }
@@ -39,4 +40,27 @@ export function checkIfAreEqual(A:number[]):boolean{
     return A.every((item,index)=>{
         return item === A[0]
     })
+}
+
+export function productArray(inputArray:number[]):number{
+    let output:number = 1
+    for(let item of inputArray){
+        output *= item
+    }
+    return output;
+}
+
+export function convertStringArrayToNumberArray(inputArray:string[]):number[]{
+    let output: number[]=[]
+    for(let item of inputArray){
+        output.push(parseInt(item))
+    }
+    return output
+}
+
+export function isNaturalNumber(inputNumber:number):boolean{
+    let output = false
+    if(Math.floor(inputNumber) === inputNumber)
+        output = true ;
+    return output
 }
