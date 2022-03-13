@@ -1,15 +1,7 @@
-export function isPrime(inputNumber:number):boolean{
-    let output = true;
-    if(inputNumber == 1)
-        return false
-    if(inputNumber == 2)
-        return true;
-    for(let i=2; i<inputNumber;i++){
-        if(inputNumber % i == 0){
-            output = false
-        }
-    }
-    return output;
+export function isPrime(N:number):boolean{
+    for(let i = 2, s = Math.sqrt(N); i <= s; i++)
+        if(N % i === 0) return false;
+    return N > 1;
 }
 
 export function factorial(N:number):number {

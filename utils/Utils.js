@@ -1,18 +1,11 @@
 "use strict";
 exports.__esModule = true;
 exports.isNaturalNumber = exports.convertStringArrayToNumberArray = exports.productArray = exports.checkIfAreEqual = exports.getArrayTotal = exports.fibonacci = exports.isPalindrome = exports.factorial = exports.isPrime = void 0;
-function isPrime(inputNumber) {
-    var output = true;
-    if (inputNumber == 1)
-        return false;
-    if (inputNumber == 2)
-        return true;
-    for (var i = 2; i < inputNumber; i++) {
-        if (inputNumber % i == 0) {
-            output = false;
-        }
-    }
-    return output;
+function isPrime(N) {
+    for (var i = 2, s = Math.sqrt(N); i <= s; i++)
+        if (N % i === 0)
+            return false;
+    return N > 1;
 }
 exports.isPrime = isPrime;
 function factorial(N) {

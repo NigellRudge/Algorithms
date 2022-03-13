@@ -10,8 +10,7 @@ export function solution(N:number=1000):number {
     outerLoop:
     for (let A=1;A<N;A++){
         for(let B = (A+1);B < N;B++){
-            let sum = (A * A) + (B * B)
-            let C = Math.sqrt(sum)
+            let C = Math.sqrt((A * A) + (B * B))
             let total = A + B + C
             if(isNaturalNumber(C)){
                 if(total === N){

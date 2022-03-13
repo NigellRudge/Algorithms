@@ -1,1 +1,6 @@
 /node_modules
+/codibilty *.js
+/Leetcode *.js
+/project_euler *.js
+
+index.js

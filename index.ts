@@ -1,9 +1,9 @@
-import {solution} from "./project_euler/PythagoreanTriplet";
+import {solution} from "./project_euler/SumPrimesBelowN";
 
 
-const input = 1000
+const input = 2000000
 
-console.log(solution())
+console.log(solution(input))
 
 
 
