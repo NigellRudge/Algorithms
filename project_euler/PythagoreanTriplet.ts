@@ -1,9 +1,6 @@
 import {isNaturalNumber} from "../utils/Utils";
 
-function isSet(A:number, B:number, C:number):boolean{
-    let sum = (A * A) + (B * B)
-    return (C*C) === sum;
-}
+
 
 export function solution(N:number=1000):number {
     let output:number = 0

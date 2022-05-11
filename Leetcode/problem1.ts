@@ -10,6 +10,6 @@ export function solution(nums: number[], target: number): number[]| null {
         }
     }
     return output;
-};
+}
 
 

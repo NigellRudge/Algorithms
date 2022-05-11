@@ -1,12 +1,6 @@
-import {solution} from "./project_euler/SumPrimesBelowN";
+import {solution} from "./Common/SelectionSort";
 
 
-const input = 2000000
+const data:number[] = [22,12,3454,1,2,3,4,5,6,7];
 
-console.log(solution(input))
-
-
-
-
-
-
+console.log(solution(data,null));
