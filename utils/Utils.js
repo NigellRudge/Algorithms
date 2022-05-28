@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-exports.swap = exports.triangular = exports.LargestInArray = exports.isEven = exports.convertStringToArray = exports.isNaturalNumber = exports.convertStringArrayToNumberArray = exports.productArray = exports.checkIfAreEqual = exports.getArrayTotal = exports.fibonacci = exports.isPalindrome = exports.factorial = exports.isSet = exports.isPrime = void 0;
+exports.ArrayIsSorted = exports.insertElementAt = exports.swap = exports.triangular = exports.LargestInArray = exports.isEven = exports.convertStringToArray = exports.isNaturalNumber = exports.convertStringArrayToNumberArray = exports.productArray = exports.checkIfAreEqual = exports.getArrayTotal = exports.fibonacci = exports.isPalindrome = exports.factorial = exports.isSet = exports.isPrime = void 0;
 function isPrime(N) {
     for (var i = 2, s = Math.sqrt(N); i <= s; i++)
         if (N % i === 0)
@@ -111,3 +111,20 @@ function swap(inputArray, index1, index2) {
     return inputArray;
 }
 exports.swap = swap;
+function insertElementAt(inputArray, index, element) {
+    if (index === void 0) { index = 1; }
+    inputArray[index] = element;
+    return inputArray;
+}
+exports.insertElementAt = insertElementAt;
+function ArrayIsSorted(inputArray) {
+    for (var i = inputArray.length - 1; i > 0; i--) {
+        if (i !== 0) {
+            if (inputArray[i] < inputArray[i - 1]) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+exports.ArrayIsSorted = ArrayIsSorted;

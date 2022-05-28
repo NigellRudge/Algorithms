@@ -1,6 +1,7 @@
-import {solution} from "./Common/SelectionSort";
+import {BinarySearch} from "./Common/BinarySearch";
 
 
-const data:number[] = [22,12,3454,1,2,3,4,5,6,7];
+const data = [1,2,44,55,66,100,120,121,122,150,200,290,340,540];
+const end = data.length -1
 
-console.log(solution(data,null));
+console.log(BinarySearch(data,121))

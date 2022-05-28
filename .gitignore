@@ -2,5 +2,5 @@
 /codibilty *.js
 /Leetcode *.js
 /project_euler *.js
-
+/common *.js
 index.js

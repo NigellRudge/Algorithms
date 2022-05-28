@@ -102,3 +102,19 @@ export function swap(inputArray:any[],index1:number,index2:number){
     inputArray[index1] = temp
     return inputArray;
 }
+
+export function insertElementAt(inputArray:any[],index:number=1,element:any):any[]{
+    inputArray[index] = element;
+    return inputArray;
+}
+
+export function ArrayIsSorted(inputArray:any[]):boolean {
+    for(let i =inputArray.length-1; i>0;i--){
+        if(i!==0){
+            if(inputArray[i] < inputArray[i-1]){
+                return false;
+            }
+        }
+    }
+    return true
+}

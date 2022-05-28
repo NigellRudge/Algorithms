@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var SelectionSort_1 = require("./Common/SelectionSort");
-var data = [22, 12, 3454, 1, 2, 3, 4, 5, 6, 7];
-console.log((0, SelectionSort_1.solution)(data, null));
+var BinarySearch_1 = require("./Common/BinarySearch");
+var data = [1, 2, 44, 55, 66, 100, 120, 121, 122, 150, 200, 290, 340, 540];
+var end = data.length - 1;
+console.log((0, BinarySearch_1.BinarySearch)(data, 121));
